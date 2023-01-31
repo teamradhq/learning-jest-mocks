@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2022",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "jest",
+      "./types/index.d.ts"
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@matchers": [
+        "./matchers/index.ts"
+      ],
+      "@matchers/*": [
+        "./matchers/*"
+      ]
+    }
+  },
+  "include": [
+    "index.ts",
+    "lib/**/*.ts",
+    "matchers/**/*.ts",
+    "types/**/*.d.ts",
+    "./jest/*.ts",
+    "./*.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./node_modules/@types",
+    "./types/index.d.ts"
+  ]
+}
