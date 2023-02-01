@@ -29,6 +29,7 @@
   },
   "include": [
     "index.ts",
+    "__mocks__/**/*.ts",
     "lib/**/*.ts",
     "matchers/**/*.ts",
     "types/**/*.d.ts",
