@@ -198,6 +198,33 @@ the functions yourself if this is more convenient. The only caveat is that you'l
 
 Another useful feature is to keep the mock in sync with the real module using `jest.requireActualModule(moduleName)`.
 
+## Examples
+
+### Creating mock functions
+
+See: [lib/applyCallback.test.ts](lib/applyCallback.test.ts)
+
+This test suite tests that a callback function is called by providing a Jest mock function.
+
+### Automatically mocking user modules
+
+See: [lib/applyCallbackToItems.test.ts](lib/applyCallbackToItems.test.ts)
+
+This test suite mocks a module using `jest.mock` and `jest.mocked`. The tests assert that the module being
+tested is calling the module that's been mocked.
+
+### Manually mocking user modules
+
+See: [lib/manual.test.ts](lib/manual.test.ts)
+
+This test suite demonstrates manually mocking a user module by defining a `lib/__mocks__/manual` module.
+
+### Manually mocking node modules
+
+See: [lib/module.fs.test.ts](lib/module.fs.test.ts)
+
+This test suite demonstrates manually mocking a node module by defining a `__mocks__/fs` module. This
+
 ## References
 
 - [Jest Mock Functions](https://jestjs.io/docs/mock-functions)
