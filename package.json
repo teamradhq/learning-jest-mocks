@@ -34,7 +34,7 @@
   "scripts": {
     "go": "ts-node -r tsconfig-paths/register --files index.ts",
     "lint": "eslint ./src --fix --config ./eslint.config.js",
-    "test": "jest --config jest.config.ts"
+    "test": "jest --config jest.config.ts --verbose"
   },
   "dependencies": {
     "babel-plugin-module-resolver": "^5.0.0",
